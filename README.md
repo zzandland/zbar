@@ -23,17 +23,17 @@ The workspaces widget is not refreshing automatically (to preserve battery). Add
 
 ```sh
 yabai -m signal --add event=space_changed \
-    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"zbar-spaces-jsx\"'"
 yabai -m signal --add event=application_launched \
-    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"zbar-spaces-jsx\"'"
 yabai -m signal --add event=application_terminated \
-    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"zbar-spaces-jsx\"'"
 yabai -m signal --add event=window_created \
-    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"zbar-spaces-jsx\"'"
 yabai -m signal --add event=window_destroyed \
-    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"zbar-spaces-jsx\"'"
 
 # if using multple displays, add an additional rule for "display_changed" event
 yabai -m signal --add event=display_changed \
-    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"nibar-spaces-jsx\"'"
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"zbar-spaces-jsx\"'"
 ```
