@@ -28,7 +28,7 @@ const renderSpace = ({ index, windows, focused }) => {
   return (
     <div style={contentStyle}>
       {'[' + index + ']'}
-      { windows.map(({ appName }) => <Icon appName={appName} />) }
+      { windows.map(app => app && <Icon appName={app.appName} />) }
     </div>
   );
 };

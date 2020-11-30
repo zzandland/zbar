@@ -3,7 +3,7 @@ const getIcon = appName => {
 
     if (appName == 'Google Chrome') {
         className="fa fa-chrome";
-    } else if (appName == 'zoom.us') {
+    } else if (appName == 'zoom.us' | appName == 'QuickTime Player') {
         className="fa fa-video-camera"
     } else if (appName == 'KakaoTalk') {
         className="fa fa-comments"
@@ -15,8 +15,6 @@ const getIcon = appName => {
         className="fa fa-music";
     } else if (appName == 'Finder') {
         className="fa fa-folder";
-    } else if (appName == 'qBittorrent') {
-        className="fa fa-download";
     } else if (appName == 'Calendar') {
         className="la la-calendar";
     } else if (appName == 'iTerm2') {
