@@ -2,7 +2,7 @@ const getIcon = appName => {
     let className = null;
 
     if (appName == 'Google Chrome') {
-        className="fa fa-chrome";
+        className="fab fa-chrome";
     } else if (appName == 'zoom.us' | appName == 'QuickTime Player') {
         className="fa fa-video-camera"
     } else if (appName == 'KakaoTalk') {
@@ -10,13 +10,13 @@ const getIcon = appName => {
     } else if (appName == 'Unity') {
         className="fa fa-gamepad";
     } else if (appName == 'Discord') {
-        className="fa fa-discord";
+        className="fab fa-discord";
     } else if (appName == 'Music') {
         className="fa fa-music";
     } else if (appName == 'Finder') {
         className="fa fa-folder";
     } else if (appName == 'Calendar') {
-        className="la la-calendar";
+        className="far fa-calendar-alt";
     } else if (appName == 'iTerm2') {
         className="fa fa-terminal";
     } else if (appName == 'Mail') {
@@ -24,23 +24,23 @@ const getIcon = appName => {
     } else if (appName == 'Xcode') {
         className="fab fa-xing";
     } else if (appName == 'Spotify') {
-        className="la la-spotify";
+        className="fab fa-spotify";
     } else if (appName == 'Preview') {
-        className="la la-file-text";
+        className="fas fa-file-alt";
     } else if (appName == 'Microsoft Excel') {
-        className="la la-th-list"
+        className="fas fa-table"
     } else if (appName == 'qbittorrent') {
-        className="la la-cloud-download"
-    } else if (appName == 'mpv') {
-        className="la la-play-circle"
-    } else if (appName == 'None') {
-        className="la la-circle"
+        className="fas fa-file-download"
+    } else if (appName == 'mpv' || appName == 'QuickTime Player') {
+        className="fas fa-play-circle"
     } else if (appName == 'Lightroom Classic' | appName == 'Photoshop CC') {
-        className="la la-camera-retro"
+        className="fas fa-camera-retro"
     } else if (appName == 'Adobe Premiere Pro CC 2019' | appName == 'Final Cut Pro' | appName == 'Adobe Media Encoder CC 2019') {
-        className="la la-video-camera"
+        className="fas fa-photo-video"
     } else if (appName == 'System Preferences') {
         className="fa fa-cogs"
+    } else if (appName == 'None') {
+        className="far fa-circle"
     } else {
         className="fa fa-question-circle";
     }
