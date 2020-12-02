@@ -6,7 +6,8 @@ export default {
     red: "#ff8700",
     accent: "#5fafaf"
   },
-  fontSize: "11px",
+  fontSize: "12px",
+  fontWeight: "400",
   lineHeight: "20px",
   fontFamily: "'Iosevka Custom', 'SF Mono', monospace"
 }

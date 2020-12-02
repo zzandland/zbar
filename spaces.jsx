@@ -20,7 +20,7 @@ const style = {
 };
 
 export const refreshFrequency = false;
-export const command = "./zbar/fetch.sh";
+export const command = "./zbar/scripts/spaces.sh";
 
 const populateWindowNames = ({ spaces, windows }) => {
   const id2window = windows.reduce((acc, { id, app }) => {
@@ -34,7 +34,7 @@ const populateWindowNames = ({ spaces, windows }) => {
   }))
 };
 
-export const render = ({ output }, ...args) => {
+export const render = ({ output }) => {
   const data = parse(output);
   if (typeof data === "undefined") {
     return (
