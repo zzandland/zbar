@@ -1,51 +1,80 @@
 const getIcon = appName => {
-    let className = null;
+  switch (appName) {
+    case 'Activity Monitor':
+      return 'fab fa-heartbeat';
 
-    if (appName == 'Google Chrome') {
-        className="fab fa-chrome";
-    } else if (appName == 'zoom.us' | appName == 'QuickTime Player') {
-        className="fa fa-video-camera"
-    } else if (appName == 'KakaoTalk') {
-        className="fa fa-comments"
-    } else if (appName == 'Unity') {
-        className="fa fa-gamepad";
-    } else if (appName == 'Discord') {
-        className="fab fa-discord";
-    } else if (appName == 'Music') {
-        className="fa fa-music";
-    } else if (appName == 'Finder') {
-        className="fa fa-folder";
-    } else if (appName == 'Calendar') {
-        className="far fa-calendar-alt";
-    } else if (appName == 'iTerm2') {
-        className="fa fa-terminal";
-    } else if (appName == 'Mail') {
-        className="fa fa-envelope";
-    } else if (appName == 'Xcode') {
-        className="fab fa-xing";
-    } else if (appName == 'Spotify') {
-        className="fab fa-spotify";
-    } else if (appName == 'Preview') {
-        className="fas fa-file-alt";
-    } else if (appName == 'Microsoft Excel') {
-        className="fas fa-table"
-    } else if (appName == 'qbittorrent') {
-        className="fas fa-file-download"
-    } else if (appName == 'mpv' || appName == 'QuickTime Player') {
-        className="fas fa-play-circle"
-    } else if (appName == 'Lightroom Classic' | appName == 'Photoshop CC') {
-        className="fas fa-camera-retro"
-    } else if (appName == 'Adobe Premiere Pro CC 2019' | appName == 'Final Cut Pro' | appName == 'Adobe Media Encoder CC 2019') {
-        className="fas fa-photo-video"
-    } else if (appName == 'System Preferences') {
-        className="fa fa-cogs"
-    } else if (appName == 'None') {
-        className="far fa-circle"
-    } else {
-        className="fa fa-question-circle";
-    }
+    case 'Android Studio':
+      return 'fab fa-android';
 
-    return className;
+    case 'Adobe Media Encoder CC 2019':
+    case 'Adobe Premiere Pro CC 2019':
+    case 'Final Cut Pro':
+      return 'fas fa-photo-video';
+
+    case 'Calendar':
+      return 'far fa-calendar-alt';
+
+    case 'Discord':
+      return 'fab fa-discord';
+
+    case 'FaceTime':
+      return 'fas fa-phone-square';
+
+    case 'Finder':
+      return 'fa fa-folder';
+
+    case 'Google Chrome':
+      return 'fab fa-chrome';
+
+    case 'iTerm2':
+      return 'fa fa-terminal';
+
+    case 'KakaoTalk':
+      return 'fa fa-comments';
+
+    case 'Lightroom Classic': 
+    case 'Photoshop CC':
+      return 'fas fa-camera-retro';
+
+    case 'Mail':
+      return 'fa fa-envelope';
+
+    case 'Microsoft Excel':
+      return 'fas fa-table';
+
+    case 'Music':
+      return 'fa fa-music';
+
+    case 'Preview':
+      return 'fas fa-file-alt';
+
+    case 'qbittorrent':
+      return 'fas fa-file-download';
+
+    case 'QuickTime Player':
+      return 'fas fa-play-circle';
+
+    case 'Spotify':
+      return 'fab fa-spotify';
+
+    case 'Spotlight':
+      return 'fas fa-search';
+
+    case 'System Preferences':
+      return 'fa fa-cogs';
+
+    case 'Unity':
+      return 'fa fa-gamepad';
+
+    case 'Xcode':
+      return 'fab fa-xing';
+
+    case 'zoom.us':
+      return 'fa fa-video-camera';
+
+    default:
+      return 'fa fa-question-circle';
+  }
 }
 
 const style = {

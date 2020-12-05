@@ -10,7 +10,7 @@ export const command = "./zbar/scripts/status.sh";
 
 const style = {
   display: "grid",
-  padding: "0 20px 0 0",
+  padding: "1px 20px 0 0",
   gridAutoFlow: "column",
   gridGap: "30px",
   position: "fixed",
