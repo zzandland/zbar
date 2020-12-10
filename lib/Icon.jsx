@@ -39,6 +39,9 @@ const getIcon = appName => {
     case 'Mail':
       return 'fa fa-envelope';
 
+    case 'Messenger':
+      return 'fab fa-facebook-messenger';
+
     case 'Microsoft Excel':
       return 'fas fa-table';
 
