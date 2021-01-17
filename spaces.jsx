@@ -38,9 +38,7 @@ export const render = ({ output }) => {
   const data = parse(output);
   if (typeof data === "undefined") {
     return (
-      <div style={style}>
-        <Error msg="Error: unknown script output" side="left" />
-      </div>
+      <div style={style} />
     );
   }
   if (typeof data.error !== "undefined") {
