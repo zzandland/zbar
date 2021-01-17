@@ -1,15 +1,16 @@
 const getIcon = appName => {
   switch (appName) {
     case 'Activity Monitor':
-      return 'fab fa-heartbeat';
+      return 'fas fa-heartbeat';
 
     case 'Android Studio':
       return 'fab fa-android';
 
-    case 'Adobe Media Encoder CC 2019':
-    case 'Adobe Premiere Pro CC 2019':
-    case 'Final Cut Pro':
-      return 'fas fa-photo-video';
+    case 'App Store':
+      return 'fab fa-app-store-ios';
+
+    case 'Calculator':
+      return 'fas fa-calculator';
 
     case 'Calendar':
       return 'far fa-calendar-alt';
@@ -19,6 +20,9 @@ const getIcon = appName => {
 
     case 'FaceTime':
       return 'fas fa-phone-square';
+
+    case 'Final Cut Pro':
+      return 'fas fa-photo-video';
 
     case 'Finder':
       return 'fa fa-folder';
@@ -48,6 +52,12 @@ const getIcon = appName => {
     case 'Music':
       return 'fa fa-music';
 
+    case 'Notes':
+      return 'fas fa-sticky-note';
+
+    case 'Pock':
+      return '';
+
     case 'Preview':
       return 'fas fa-file-alt';
 
@@ -56,6 +66,9 @@ const getIcon = appName => {
 
     case 'QuickTime Player':
       return 'fas fa-play-circle';
+
+    case 'Reminders':
+      return 'fas fa-list-ul';
 
     case 'Spotify':
       return 'fab fa-spotify';
@@ -86,9 +99,7 @@ const style = {
 };
 
 export default ({ appName }) => {
-    const iconClass = getIcon(appName);
-    const fontScale = (iconClass.slice(0,2) == 'fa') ? '1.3em' : '1.7em'
-    return (
-        <i className={iconClass} style={{ ...style, fontSize: fontScale }}/>
-    );
+  const iconClass = getIcon(appName);
+  const fontScale = (iconClass.slice(0,2) == 'fa') ? '1.3em' : '1.7em'
+  return iconClass && <i className={iconClass} style={{ ...style, fontSize: fontScale }}/>
 }
