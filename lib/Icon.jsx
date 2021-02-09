@@ -61,8 +61,8 @@ const getIcon = appName => {
     case 'Preview':
       return 'fas fa-file-alt';
 
-    case 'qbittorrent':
-      return 'fas fa-file-download';
+    case 'qBittorrent':
+      return 'fas fa-download';
 
     case 'QuickTime Player':
       return 'fas fa-play-circle';
