@@ -18,6 +18,9 @@ const getIcon = appName => {
     case 'Discord':
       return 'fab fa-discord';
 
+    case 'Docker Desktop':
+      return 'fab fa-docker';
+
     case 'FaceTime':
       return 'fas fa-phone-square';
 
