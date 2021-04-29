@@ -20,8 +20,6 @@ LOAD_AVERAGE=$(sysctl -n vm.loadavg | awk '{print $2}')
 WIFI_STATUS=$(ifconfig en0 | grep status | cut -c 10-)
 WIFI_SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 
-DND=$(defaults -currentHost read com.apple.notificationcenterui doNotDisturb)
-
 echo $(cat <<-EOF
 {
     "datetime": {
@@ -39,8 +37,7 @@ echo $(cat <<-EOF
     "wifi": {
         "status": "$WIFI_STATUS",
         "ssid": "$WIFI_SSID"
-    },
-    "dnd": $DND
+    }
 }
 EOF
 )

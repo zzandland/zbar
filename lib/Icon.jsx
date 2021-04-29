@@ -34,6 +34,7 @@ const getIcon = appName => {
       return 'fab fa-chrome';
 
     case 'iTerm2':
+    case 'Code':
       return 'fa fa-terminal';
 
     case 'KakaoTalk':
@@ -67,11 +68,17 @@ const getIcon = appName => {
     case 'qBittorrent':
       return 'fas fa-download';
 
+    case 'pgAdmin 4':
+      return 'fas fa-database';
+
     case 'QuickTime Player':
       return 'fas fa-play-circle';
 
     case 'Reminders':
       return 'fas fa-list-ul';
+
+    case 'Slack':
+      return 'fab fa-slack';
 
     case 'Spotify':
       return 'fab fa-spotify';
